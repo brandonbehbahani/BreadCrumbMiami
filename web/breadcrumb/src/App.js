@@ -1,9 +1,21 @@
 import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      
+      <nav>
+        <link to="/">Home</link>
+        <link to ="/about">About</link>
+      </nav>
+
       <header className="App-header">
         <h1>Bread Crumb</h1>
         <img src={logo} className="App-logo" alt="logo" />
